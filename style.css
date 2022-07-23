@@ -1,0 +1,23 @@
+.text-blue{
+	color: #231D4F;
+}
+.text-gray{
+	color:#D9DBE1;
+}
+.bg-blue{
+	background-color: #231D4F;
+}
+.choose-btn{
+	margin-top: 5px;
+	font-size: 15px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+	background-color: #F496D1;
+	color:#3F87F5;
+	padding: 8px 40px;
+}
+.cards>h1,h3{
+	color: #231D4F;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}
