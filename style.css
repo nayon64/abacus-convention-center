@@ -7,6 +7,20 @@
 .bg-blue{
 	background-color: #231D4F;
 }
+
+.hero .carousel-item {
+	height: 90vh;
+	object-fit: cover;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.carousel-caption{
+	max-width: 560px;
+	margin: o auto;
+
+}
+
 .choose-btn{
 	margin-top: 5px;
 	font-size: 15px;
