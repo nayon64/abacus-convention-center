@@ -159,25 +159,38 @@
       </section>
     </header>
     <!-- header section ends -->
+
+
     <!-- main section starts -->
     <main class="container">
+      
       <!-------- about section starts ------->
       <section class="row d-flex align-items-center py-5">
+
         <!-- about images -->
         <div class="col-md-6">
           <img class="img-fluid" src="images/wedding.png" alt="" />
         </div>
         <!-- about details -->
-        <div class="col-md-6">
+        <div class="col-md-6 position-relative">
+          <div class="toast position-absolute end-0 top-25" id="liveToast">
+            <div class="toast-header justify-content-between">
+              <img src="images/icons/Vector.svg" alt="">
+              <p class="h-100 my-auto">20% off on next booking</p>
+              <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+          </div>
           <h1>Every moment is Precious</h1>
           <p>
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
             sint. Velit officia consequat duis enim velit mollit. Exercitation
             veniam consequat sunt nostrud amet.
           </p>
-          <a class="btn btn-primary" href="#">Explore our album</a>
+          <a class="btn btn-primary" href="#1" id="btn-toast">Explore our album</a>
         </div>
         <!-------- about section ends --------->
+
+
       </section>
       <!-- card section ends -->
       <section class="pb-5">
@@ -251,27 +264,27 @@
 
           <!-- card-3 -->
 
-          <div class="col-12 col-sm-6 col-md-4 col-lg-3 cards ">
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 cards bg-primary">
             <h1>$800</h1>
             <h3>Wedding plus</h3>
             <p class="text-secondary">For most weddings with premium plans</p>
             <ul class="list-group">
-              <li class="list-group-item border-0 text-secondary ps-0">
+              <li class="list-group-item border-0 text-secondary ps-0 bg-transparent">
                 <img src="images/icons/check-circle-1.png" alt="" /> Full space
                 access
               </li>
-              <li class="list-group-item border-0 text-secondary ps-0">
+              <li class="list-group-item border-0 text-secondary ps-0 ">
                 <img src="images/icons/check-circle-1.png" alt="" /> Dedicated
                 team
               </li>
-              <li class="list-group-item border-0 text-secondary ps-0">
+              <li class="list-group-item border-0 text-secondary ps-0 bg-transparent">
                 <img src="images/icons/check-circle-1.png" alt="" /> Buffet food
               </li>
-              <li class="list-group-item border-0 text-secondary ps-0">
+              <li class="list-group-item border-0 text-secondary ps-0 bg-transparent">
                 <img src="images/icons/check-circle-1.png" alt="" /> Premium
                 decoration
               </li>
-              <li class="list-group-item border-0 text-secondary ps-0">
+              <li class="list-group-item border-0 text-secondary ps-0 bg-transparent">
                 <img src="images/icons/check-circle-1.png" alt="" /> Pay as plan
               </li>
             </ul>
@@ -555,5 +568,16 @@
 
     <!-- bootstrap js cdn link -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      const toastTrigger = document.getElementById('btn-toast')
+      const toastLiveExample = document.getElementById('liveToast')
+      if (toastTrigger) {
+        toastTrigger.addEventListener('click', () => {
+          const toast = new bootstrap.Toast(toastLiveExample)
+
+          toast.show()
+        })
+}
+    </script>
   </body>
 </html>

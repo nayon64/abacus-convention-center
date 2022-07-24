@@ -30,6 +30,9 @@
 	color:#3F87F5;
 	padding: 8px 40px;
 }
+.toast{
+	max-width: 15rem;
+}
 .cards>h1,h3{
 	color: #231D4F;
 	font-family: 'Roboto', sans-serif;
