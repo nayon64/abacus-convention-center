@@ -37,4 +37,27 @@
 	color: #231D4F;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
+	transition: .7s;
 }
+.cards{
+	padding: 10px 10px;
+	transition: .6s;
+}
+.list-group-item{
+	background-color: transparent;
+
+}
+.cards:hover{
+	background-color: #3F87F5;
+	color: #ffffff;
+}
+.cards:hover h1{
+	color: white;
+}
+.cards:hover h3{
+	color: white;
+}
+.cards:hover p{
+	color: white;
+}
+
